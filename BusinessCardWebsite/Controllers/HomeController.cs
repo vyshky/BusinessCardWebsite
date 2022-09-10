@@ -15,14 +15,17 @@ namespace BusinessCardWebsite.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.Button = "Index";
             return View();
         }
         public IActionResult Portfolio()
         {
+            ViewBag.Button = "Portfolio";
             return View();
         }
         public IActionResult Summary()
         {
+            ViewBag.Button = "Summary";
             return View();
         }
 

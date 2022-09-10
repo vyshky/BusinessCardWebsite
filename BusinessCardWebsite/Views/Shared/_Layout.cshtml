@@ -77,9 +77,24 @@
 		<!-- Nav -->
 		<nav id="nav">
 			<ul class="links">
-				<li class="active"><a asp-controller="Home" asp-action="Index">Обо мне</a></li>
-				<li><a asp-controller="Home" asp-action="Portfolio">Портфолио</a></li>
-				<li><a asp-controller="Home" asp-action="Summary">Резюме</a></li>
+				@if ((string)@ViewBag.Button == "Index")
+				{
+					<li class="active" id="IndexButton"><a asp-controller="Home" asp-action="Index">Обо мне</a></li>
+				}else{
+					<li id="IndexButton"><a asp-controller="Home" asp-action="Index">Обо мне</a></li>
+				}
+				@if ((string)@ViewBag.Button == "Portfolio")
+				{
+					<li class="active" id="PortfolioButton"><a asp-controller="Home" asp-action="Portfolio">Портфолио</a></li>
+				}else{
+					<li id="PortfolioButton"><a asp-controller="Home" asp-action="Portfolio">Портфолио</a></li>
+				}
+				@if ((string)@ViewBag.Button == "Summary")
+				{
+					<li class="active" id="SummaryButton"><a asp-controller="Home" asp-action="Summary">Резюме</a></li>
+				}else{
+					<li id="SummaryButton"><a asp-controller="Home" asp-action="Summary">Резюме</a></li>
+				}				
 			</ul>
 			<ul class="icons">
 				<li><a href="https://github.com/vyshky" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
@@ -87,7 +102,7 @@
 		</nav>
 
 		<!-- Main -->
-		<div id="main">
+		<div id="main">			
 			@RenderBody()
 		</div>
 
