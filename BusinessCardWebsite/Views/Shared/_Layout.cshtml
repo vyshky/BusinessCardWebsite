@@ -44,7 +44,10 @@
 					<li class="active" id="SummaryButton"><a asp-controller="Home" asp-action="Summary">Резюме</a></li>
 				}else{
 					<li id="SummaryButton"><a asp-controller="Home" asp-action="Summary">Резюме</a></li>
-				}				
+				}
+				
+				<li id="TestButton"><a href="#">Clear_Main</a></li>
+
 			</ul>
 			<ul class="icons">
 				<li><a href="https://github.com/vyshky" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
@@ -52,7 +55,7 @@
 		</nav>
 
 		<!-- Main -->
-		<div id="main">			
+		<div id="main">
 			@RenderBody()
 		</div>
 
@@ -118,6 +121,7 @@
 	<script src="~/assets/js/breakpoints.min.js" asp-append-version="true"></script>
 	<script src="~/assets/js/util.js" asp-append-version="true"></script>
 	<script src="~/assets/js/main.js" asp-append-version="true"></script>
+	<script src="~/assets/js/click.js" asp-append-version="true"></script>
 	@await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

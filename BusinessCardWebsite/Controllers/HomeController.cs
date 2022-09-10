@@ -28,7 +28,6 @@ namespace BusinessCardWebsite.Controllers
             ViewBag.Button = "Summary";
             return View();
         }
-
         public IActionResult Privacy()
         {
             return View();
