@@ -1,56 +1,6 @@
-﻿@*<!DOCTYPE html>
-<html lang="en">
+﻿<html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - BusinessCardWebsite</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/BusinessCardWebsite.styles.css" asp-append-version="true" />
-</head>
-<body>
-    <div class="col-xs text-center">
-					<div id="fh5co-logo"><a href="index.html">Shape<span>.</span></a></div>
-	</div><div class="col-xs text-center menu-1">
-					<ul>
-						<li class="active"><a href="index.html">Home</a></li>
-						<li class="has-dropdown">
-							<a href="services.html">Services</a>
-							<ul class="dropdown" style="display: none;">
-								<li><a href="#">Web Design</a></li>
-								<li><a href="#">eCommerce</a></li>
-								<li><a href="#">Branding</a></li>
-								<li><a href="#">API</a></li>
-							</ul>
-						</li>
-
-						<li><a href="work.html">Work</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="blog.html">Blog</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-	</div>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - BusinessCardWebsite - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
-</body>
-</html>
-*@
-
-<html>
-<head>
-	<title>Massively by HTML5 UP</title>
+	<title>Визитка</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="~/assets/css/main.css" asp-append-version="true" />
@@ -148,10 +98,7 @@
 				<section>
 					<h3>Social</h3>
 					<ul class="icons alt">
-						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="https://github.com/vyshky" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 					</ul>
 				</section>
 			</section>
